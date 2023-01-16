@@ -16,7 +16,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 # Request headers
 $headers = array(
     'Cache-Control: no-cache',
-    'Ocp-Apim-Subscription-Key: 4d3525c34281431cb075e3548a59306d',);
+    'Ocp-Apim-Subscription-Key: ',); #require subscription key on uncomtrade website
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 $resp = curl_exec($curl);
